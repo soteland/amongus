@@ -12,3 +12,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.gameBG {
+    background-image: url(../images/bg.jpg);
+}

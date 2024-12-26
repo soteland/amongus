@@ -39,11 +39,12 @@ export const App = () => {
   };
 
   return (
-    <div className="bg-gray-400">
-      <div className="min-h-screen my-auto flex flex-col items-center justify-center bg-gray-100 text-gray-800">
+    <div className="min-h-screen gameBG bg-cover bg-center">
+      <div className="min-h-screen my-auto flex flex-col items-center justify-center  text-gray-800">
         {!gameStarted ? (
-          <div className="w-full max-w-md bg-white rounded-lg shadow p-6">
-            <h1 className="text-2xl font-bold mb-4">Among Us</h1>
+          <div className="w-full max-w-md bg-white bg-opacity-70 rounded-lg shadow p-6">
+            <h1 className="text-2xl font-bold mb-4">AM0NG US</h1>
+            <p>En pitteliten web-app for de som vil forenkle styringen av spillet "AM0MG US" som barna liker å leke. Du velger antall spillere, om de skal ha med sheriff og så kan du vise hver spiller en egen skjerm med valget.</p>
 
             <div className="mb-4">
               <label className="block text-sm font-medium mb-2">Antall spillere</label>
@@ -115,11 +116,11 @@ export const App = () => {
             </button>
           </div>
         ) : (
-          <div className="w-full max-w-md bg-white rounded-lg shadow p-6">
+          <div className="w-full max-w-md bg-white bg-opacity-70 rounded-lg shadow p-6">
             {currentIndex < roles.length ? (
               <div className="text-center">
-                <h2 className="text-xl font-bold mb-4">Player {currentIndex + 1}</h2>
-                <p className="text-3xl font-bold text-blue-500">{roles[currentIndex]}</p>
+                <h2 className="text-xl font-bold mb-4">Spiller {currentIndex + 1}</h2>
+                <p className="text-3xl font-bold text-blue-900 mb-4">{roles[currentIndex]}</p>
                 <button
                   onClick={handleNextPlayer}
                   className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
