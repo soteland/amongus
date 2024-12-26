@@ -1,5 +1,7 @@
 # Overkomplisert AM0NG US rolletildelings-app
 
+![GitHub repo size](https://img.shields.io/github/repo-size/soteland/amongus)
+
 Denne appen skal gjøre det enklere for foreldre, eller andre, å fordele roller i spillet AM0NG US. Appen er laget for å være enkel og rask å bruke.
 
 ## Overkomplisering deluxe
